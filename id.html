@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>ID Card Generator</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <h1>STUDENT'S ID CARD</h1>
+  </header>
+  <div class="container">
+    <div class="section">
+      <div class="centertext">
+        Information Form
+      </div>
+      <form onsubmit="return false">
+        <div class="formelement">
+          <label class="formlabel">
+            Enter Full Name:
+          </label>
+          <input type="text" id="name">
+        </div>
+        <div class="formelement">
+          <label class="formlabel">
+            Enter College Name:
+          </label>
+          <input type="text" id="collegename">
+        </div>
+        <div class="formelement">
+          <label class="formlabel">
+            Enter Location:
+          </label>
+          <input type="text" id="location">
+        </div>
+        <div class="formelement">
+          <label class="formlabel">
+            Enter student Picture:
+          </label>
+          <input type="file" id="image-input" 
+            accept="image/jpeg, image/png, image/jpg"
+            name="filename">
+          <button onclick="generator()">
+            Generate Card</button>
+        </div>
+      </form>
+    </div>
+    <div class="section">
+      <div class="id-card-container" id="collegeCard">
+        <div class="centertext">
+          Generated Card
+        </div>
+        <div class="card-container">
+          <div class="card-wrapper">
+            <div class="user-card">
+              <span class="user-photo" 
+                id="display-image">
+                <div id="display-image"></div>
+              </span>
+            </div>
+            <div class="general-information">
+              <div class="card-element card-name">
+                <span>Name:</span>
+                <span id="cardName"></span>
+              </div>
+              <div class="card-element college-name">
+                <span>College Name:</span>
+                <span id="cardCollegeName"></span>
+              </div>
+              <div class="card-element college-name">
+                <span>Location:</span>
+                <span id="cardLocation"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+.container {
+  padding: 100px;
+  margin: 100px;
+  margin-left: 170px;
+  width: 25%;
+  height: 25%;
+  justify-content: center;
+  align-items: center;
+  background-color: #0436fcb9;
+  color: rgb(249, 241, 241);
+  font-size: 20px;
+}
+.Quote_display {
+  /* padding: 50%;
+  margin: 50%; */
+
+  justify-content: center;
+  align-items: center;
+  color: #e304fc;
+  color: burlywood;
+}
+.Quote_display {
+  background-color: #f2f2f2;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  border: 1px solid aqua;
+}
+button {
+  background-color: #e304fc;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 167px;
+}
+h1 {
+  color: #e304fc;
+  font-size: 50px;
+  align-items: center;
+  justify-content: center;
+}
